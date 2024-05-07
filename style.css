@@ -1,0 +1,122 @@
+body{
+  background-color: #081B21; 
+
+}
+main,.content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:100vh;
+  flex-direction: column;
+}
+.content{
+  width: 520px;
+  height: 411px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  gap: 40px;
+}
+.shape {
+  stroke-dasharray: 0 540;
+  stroke-dashoffset: 4;
+  stroke-width: 10px;
+  stroke: #0276B1;
+  border-radius: 100%;
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 6s; 
+}
+
+
+.svg-wrapper.active .shape {
+  background-color: white;
+  stroke-width: 4px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 760;
+  border-radius: 100%;
+}
+.shape2 {
+  stroke-dasharray: 0 540;
+  stroke-dashoffset: 4;
+  stroke-width: 1px;
+  stroke: #0276B1;
+  border-radius: 100%;
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 6s; 
+}
+.svg-wrapper2.active .shape2{
+  background-color: white;
+  stroke-width: 4px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 760;
+  border-radius: 100%;
+}
+.svg-wrapper{
+  padding-left: 100px;
+}
+svg{
+  background-color: white;
+  border: none;
+}
+.title{
+  font-size: 16px;
+  font-weight: 400;
+  color: #212121;
+}
+.titlespan{
+  font-size: 16px;
+  font-weight: 700;
+  color: #212121;
+}
+.updiv{
+    width: 400px;
+    height: 70px;
+    font-weight: 400;
+    font-size: 11px;
+    background-color: #013D5B;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    justify-content: space-around;
+    text-align: center;
+    position: absolute;
+    top: 316px;
+}
+.dollarimg{
+  width: 150px;
+  height: 150px;
+  position: relative;
+  top: -233px;
+}
+#second {
+  display: none;
+}
+.seccontent{
+  gap: 0px;
+}
+.secondp{
+  font-size: 17px;
+    font-weight: 400;
+    width: 261px;
+    text-align: center;
+}
+.seccondh{
+  height: 0px;
+  padding-top: 24px;
+}
+.thirdp{
+  position: relative;
+  top: 158px;
+  font-size: 17px;
+  text-align: center;
+  width: 395px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+.thirdwrapper{
+  padding-top: 100px;
+}
+.thirdimg{
+  width: 109px;
+  height: 109px;
+}
+
