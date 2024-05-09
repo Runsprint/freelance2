@@ -10,18 +10,17 @@ main,.content{
 }
 
 .content{
-  width: 370px;
-  height: 350px;
+  width: 100px;
+  height: 100px;
   background-color: #ffffff;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 140px;
-  transition: width 0.5s, height 0.5s;
-
+  transition: width 0.2s, height 0.2s;
 }
+
 
 .shape {
   border: 1px solid grey;
@@ -43,6 +42,7 @@ main,.content{
 
 .svg-wrapper{
   position: relative;
+  top: 65px;
 }
 svg{
   /* background-color: white; */
@@ -50,23 +50,27 @@ svg{
 }
 .title{
   font-size: 15px;
-  font-weight: 400;
-  color: #212121;
-
-}
-.titlespan{
-  font-size: 16px;
   font-weight: 700;
   color: #212121;
+  position: relative;
+  top: 82px;
+}
+.titlespan{
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 600;
+  color: #212121;
+  opacity: 0.9;
 }
 .firsth2{
-  font-size: 16px;
+  font-family: optimist, Helvetica Neue, Helvetica, Arial, "sans-serif";
+  font-size: 12px;
   font-weight: 500;
+  opacity: 0.9;
 }
 .updiv{
-    width: 350px;
-    height: 50px;
-
+    width: 300px;
+    height: 40px;
     background-color: #013D5B;
     color: #ffffff;
     display: flex;
@@ -75,52 +79,39 @@ svg{
     justify-content: space-around;
     text-align: center;
     position: relative;
-    top: 35px;
+    top: 90px;
     z-index: 1;
-
 }
 .dollarimg{
   width: 90px;
   height: 90px;
   position: relative;
-  top: -239px;
+  top: -148px;
 }
 
 
-.seconddiv{
-  width: 370px;
-  height: 350px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 22px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  justify-content: center;
-}
 .secondp{
     font-size: 17px;
     font-weight: 400;
     width: 261px;
     text-align: center;
+
 }
 .seccondh{
   height: 0px;
   padding-top: 24px;
   font-size: 26px;
   text-align: center;
-
 }
 .thirdp{
   position: relative;
-  bottom: 400px;
-  font-size: 17px;
+  bottom: 181px;
   text-align: center;
-  width: 395px;
-  letter-spacing: 1px;
-  font-weight: 400;
-
+  letter-spacing: 2;
+  font-weight: 500;
+  font-size: 14px;
+  font-family: optimist, Helvetica Neue, Helvetica, Arial, "sans-serif";
+  opacity: 0.7;
 }
 .thirdwrapper{
   padding-top: 100px;
@@ -129,7 +120,7 @@ svg{
   width: 90px;
   height: 90px;
   position: relative;
-  top: -336px;
+  top: -120px;
 }
 
 
