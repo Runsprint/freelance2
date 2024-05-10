@@ -1,99 +1,99 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const svgWrapper = document.querySelector('.svg-wrapper');
-  const title = document.getElementById('title')
+let circularProgress = document.getElementsByClassName("circular-progress")[0];
+let progressValue = document.getElementsByClassName("progress-value")[0];
+const title = document.getElementById('title')
 
-  const updiv = document.getElementById('updiv')
-  const svgwrapper = document.getElementById('svgwrapper')
-  const svgdollar = document.getElementById('svgdollar')
-  const  content =document.getElementById('content')
-  const  firsth2 =document.getElementById('firsth2')
- 
-  const secondsvg = document.getElementById('secondsvg')
-  secondsvg.style.display ='none'
+const updiv = document.getElementById('updiv')
+const svgdollar = document.getElementById('svgdollar')
+const  content =document.getElementById('content')
+const  firsth2 =document.getElementById('firsth2')
+
+const secondsvg = document.getElementById('secondsvg')
+secondsvg.style.display ='none'
 
 
-  const dollarimg  = document.getElementById('dollarimg')
-  dollarimg.style.display ='none'
+const dollarimg  = document.getElementById('dollarimg')
+dollarimg.style.display ='none'
 
-  const seccondh  = document.getElementById('seccondh')
-  seccondh.style.display ='none'
+const seccondh  = document.getElementById('seccondh')
+seccondh.style.display ='none'
 
-  const secondp  = document.getElementById('secondp')
-  secondp.style.display ='none'
+const secondp  = document.getElementById('secondp')
+secondp.style.display ='none'
 
-  const thirdp  = document.getElementById('thirdp')
-  thirdp.style.display ='none'
+const thirdp  = document.getElementById('thirdp')
+thirdp.style.display ='none'
 
-  const shape = document.querySelector('.shape');
- 
+
+
+let progressStartValue = 0;
+let progressEndValue = 100;
+let speed = 30;
+
+function startProgress() {
+  let progress = setInterval(() => {
+      progressStartValue++;
+      progressValue.textContent = `${progressStartValue}%`;
+      circularProgress.style.background = `conic-gradient(#0276B1 ${progressStartValue * 3.6}deg, #ededed 0deg)`;
+      if (progressStartValue == progressEndValue) {
+          clearInterval(progress);
+          progressStartValue = 0; // Reset the progress start value to restart from the beginning
+      }
+  }, speed);
+}
+startProgress()
+
   
   window.onload = function() {
     content.style.width = '370px';
     content.style.height = '350px';
-    // title.style.display ='flex'
     firsth2.style.display='flex'
   }
 
-///first
-  function triggerAnimation() {
-    svgWrapper.classList.add('active');  
-  }
-  setTimeout(triggerAnimation, 1000);
+  
 ///////////second
 function secondpart(){
   title.style.display ='none'
   updiv.style.display ='none'
-  svgwrapper.style.display ='none'
+  circularProgress.style.display ='none'
+  progressValue.style.display ='none'
   svgdollar.style.display ='none'
 }
-setTimeout(secondpart, 6000);
+setTimeout(secondpart, 4000);
 
 setTimeout(() => {
 secondsvg.style.display ='flex'
 secondp.style.display ='flex'
-}, 6500);
+}, 4500);
 
 setTimeout(() => {
 seccondh.style.display ='flex'
   
-},6700);
+},4700);
 
 
 //display none second part
 setTimeout(() => {
   secondsvg.style.transform = 'translateY(55px)';
     secondsvg.style.transition = 'transform 1s ease-in-out';
-  },8600);
+  },6600);
  
   setTimeout(() => {
     secondp.style.transform = 'translateY(-55px)';
     secondp.style.transition = 'transform 1s ease-in-out'; 
     seccondh.style.transform = 'translateY(-45px)';
     seccondh.style.transition = 'transform 1s ease-in-out'; 
-  },8500);
+  },6500);
  
   
   setTimeout(() => {
     secondp.style.display ='none'
     secondsvg.style.display ='none'
     seccondh.style.display ='none' 
-  },8870);
-
-  ///additional 
-  setTimeout(function (){
-    svgWrapper.classList.remove('active');
-
-  },7500)
-
-  setTimeout(function (){
-    svgWrapper.classList.add('active');
-  },10000)
-
-  
+  },6870);
 
 
-  
-
+ 
   function thirdpart(){
     title.style.display ='none'
     updiv.style.display ='none'
@@ -104,11 +104,14 @@ setTimeout(() => {
     thirdp.style.display ='flex'
     dollarimg.style.display='flex'
     content.style.display ='flex'
-    svgwrapper.style.display ='flex'
-    svgwrapper.style.top ='151px'
+    circularProgress.style.display ='flex'
+    startProgress()
+    circularProgress.style.top ='120px'
 }
-setTimeout(thirdpart, 9500);
+setTimeout(thirdpart, 7500);
 });
+
+
 
 setTimeout(() => {
   content.style.transition = 'transform 1s ease-in-out'; 
@@ -119,7 +122,7 @@ setTimeout(() => {
   seconddiv.style.transition = 'transform 1s ease-in-out'; 
   thirdp.style.transform = 'translateY(-700px)';
   thirdp.style.transition = 'transform 1s ease-in-out'; 
-}, 13730);
+}, 10730);
 
 
 setTimeout(() => {
@@ -127,5 +130,6 @@ setTimeout(() => {
   thirdp.style.display = 'none';
   dollarimg.style.display = 'none';
   seconddiv.style.display = 'none';
-}, 15000);
+}, 12000);
+
 
