@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
   const svgWrapper = document.querySelector('.svg-wrapper');
   const title = document.getElementById('title')
+
   const updiv = document.getElementById('updiv')
   const svgwrapper = document.getElementById('svgwrapper')
   const svgdollar = document.getElementById('svgdollar')
@@ -29,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
   window.onload = function() {
     content.style.width = '370px';
     content.style.height = '350px';
-    title.style.display ='flex'
+    // title.style.display ='flex'
     firsth2.style.display='flex'
   }
 
