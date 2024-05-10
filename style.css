@@ -137,8 +137,8 @@ svg{
 .thirdimg{
   position: relative;
   top: -90px;
-  transform: rotate(10deg);
-  width: 90px;
+  /* transform: rotate(10deg); */
+  /* width: 90px; */
 }
 
 

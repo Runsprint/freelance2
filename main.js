@@ -37,7 +37,7 @@ function startProgress() {
       circularProgress.style.background = `conic-gradient(#0276B1 ${progressStartValue * 3.6}deg, #ededed 0deg)`;
       if (progressStartValue == progressEndValue) {
           clearInterval(progress);
-          progressStartValue = 0; // Reset the progress start value to restart from the beginning
+          progressStartValue = 0;
       }
   }, speed);
 }
@@ -92,8 +92,18 @@ setTimeout(() => {
     seccondh.style.display ='none' 
   },6870);
 
-
- 
+  setTimeout(() => {
+    thirdp.style.display ='flex'
+    thirdp.style.transform = 'translateY(5px)';
+    thirdp.style.transition = 'transform 3s ease-in-out'; 
+    dollarimg.style.display='flex'
+    content.style.display ='flex'
+    circularProgress.style.display ='flex'
+    circularProgress.style.top ='120px'
+    circularProgress.style.transform = 'translateY(5px)';
+    circularProgress.style.transition = 'transform 1s ease-in-out'; 
+    
+  },7600);
   function thirdpart(){
     title.style.display ='none'
     updiv.style.display ='none'
@@ -101,15 +111,11 @@ setTimeout(() => {
     secondsvg.style.display ='none'
     seccondh.style.display ='none'
     secondp.style.display ='none'
-    thirdp.style.display ='flex'
-    dollarimg.style.display='flex'
-    content.style.display ='flex'
-    circularProgress.style.display ='flex'
     startProgress()
-    circularProgress.style.top ='120px'
 }
 setTimeout(thirdpart, 7500);
 });
+
 
 
 
@@ -130,6 +136,6 @@ setTimeout(() => {
   thirdp.style.display = 'none';
   dollarimg.style.display = 'none';
   seconddiv.style.display = 'none';
-}, 12000);
+}, 11500);
 
 
