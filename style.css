@@ -1,5 +1,7 @@
 body{
   background-color: #081B21; 
+  font-family: 'Roboto', sans-serif;
+
 }
 main,.content{
   display: flex;
@@ -106,20 +108,19 @@ svg{
 
 
 .secondp{
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 17px;
+  font-weight: 400;
   width: 261px;
   text-align: center;
-  letter-spacing: 0.7px;
   display: none;
-  line-height: 18px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
 }
 .seccondh{
   height: 0px;
-  padding-top: 24px;
-  font-size: 20px;
+  font-size: 23px;
   text-align: center;
-  letter-spacing: 0.9px;
+  letter-spacing: 0.5px;
   line-height: 38px;
   display: none;
 }

@@ -75,9 +75,6 @@ setTimeout(() => {
   },4600);
 
 
-  
-   
-
 // display none second part
 setTimeout(() => {
   secondsvg.style.transform = 'translateY(55px)';
