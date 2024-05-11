@@ -125,23 +125,23 @@ setTimeout(thirdpart, 7500);
 
 
 
-// setTimeout(() => {
-//   content.style.transition = 'transform 1s ease-in-out'; 
-//   content.style.transform = 'translateY(-700px)';
-//   dollarimg.style.transition = 'transform 11s ease-in-out'; 
-//   dollarimg.style.transform = 'translateY(-700px)'; 
-//   seconddiv.style.transform = 'translateY(-500px)';
-//   seconddiv.style.transition = 'transform 1s ease-in-out'; 
-//   thirdp.style.transform = 'translateY(-700px)';
-//   thirdp.style.transition = 'transform 1s ease-in-out'; 
-// }, 10730);
+setTimeout(() => {
+  content.style.transition = 'transform 1s ease-in-out'; 
+  content.style.transform = 'translateY(-700px)';
+  dollarimg.style.transition = 'transform 11s ease-in-out'; 
+  dollarimg.style.transform = 'translateY(-700px)'; 
+  seconddiv.style.transform = 'translateY(-500px)';
+  seconddiv.style.transition = 'transform 1s ease-in-out'; 
+  thirdp.style.transform = 'translateY(-700px)';
+  thirdp.style.transition = 'transform 1s ease-in-out'; 
+}, 10730);
 
 
-// setTimeout(() => {
-//   content.style.display = 'none'; 
-//   thirdp.style.display = 'none';
-//   dollarimg.style.display = 'none';
-//   seconddiv.style.display = 'none';
-// }, 11500);
+setTimeout(() => {
+  content.style.display = 'none'; 
+  thirdp.style.display = 'none';
+  dollarimg.style.display = 'none';
+  seconddiv.style.display = 'none';
+}, 11500);
 
 
