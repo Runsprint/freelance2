@@ -11,17 +11,7 @@ const dollarimg  = document.getElementById('dollarimg')
 const seccondh  = document.getElementById('seccondh')
 const secondp  = document.getElementById('secondp')
 const thirdp  = document.getElementById('thirdp')
-secondp.style.display ='none';
-thirdp.style.display ='none';
 
-secondsvg.style.display ='none'
-
-seccondh.style.display ='none'
-
-title.style.display ='none'
-updiv.style.display ='none'
-circularProgress.style.display ='none'
-progressValue.style.display ='none'
 svgdollar.style.display ='none'
 
 
