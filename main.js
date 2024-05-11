@@ -73,17 +73,16 @@ setTimeout(secondpart, 4020);
 setTimeout(() => {
   secondsvg.style.display ='flex'
   secondp.style.display ='flex'
-
       secondsvg.style.transition = 'transform 1s ease-in-out';
       secondp.style.transform = 'translateY(12px)';
       secondp.style.transition = 'transform 1s ease-in-out'; 
-  }, 4500);
+  }, 4530);
   
   setTimeout(() => {
   seccondh.style.display ='flex'
   seccondh.style.transform = 'translateY(10px)';
   seccondh.style.transition = 'transform 1s ease-in-out';
-  },4600);
+  },4550);
 
 
 // display none second part
