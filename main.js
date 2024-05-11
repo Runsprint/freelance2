@@ -2,29 +2,34 @@ document.addEventListener('DOMContentLoaded', function() {
 let circularProgress = document.getElementsByClassName("circular-progress")[0];
 let progressValue = document.getElementsByClassName("progress-value")[0];
 const title = document.getElementById('title')
-
 const updiv = document.getElementById('updiv')
 const svgdollar = document.getElementById('svgdollar')
 const  content =document.getElementById('content')
 const  firsth2 =document.getElementById('firsth2')
-
 const secondsvg = document.getElementById('secondsvg')
+const dollarimg  = document.getElementById('dollarimg')
+const seccondh  = document.getElementById('seccondh')
+const secondp  = document.getElementById('secondp')
+const thirdp  = document.getElementById('thirdp')
+secondp.style.display ='none';
+thirdp.style.display ='none';
+
 secondsvg.style.display ='none'
 
-
-const dollarimg  = document.getElementById('dollarimg')
-dollarimg.style.display ='none'
-
-const seccondh  = document.getElementById('seccondh')
 seccondh.style.display ='none'
 
-const secondp  = document.getElementById('secondp')
-secondp.style.display ='none'
-
-const thirdp  = document.getElementById('thirdp')
-thirdp.style.display ='none'
 
 
+
+
+
+
+window.onload = function() {
+  content.style.width = '370px';
+  content.style.height = '350px';
+  firsth2.style.display='flex'
+  dollarimg.style.display ='none'
+}
 
 let progressStartValue = 0;
 let progressEndValue = 100;
@@ -43,12 +48,6 @@ function startProgress() {
 }
 startProgress()
 
-  
-  window.onload = function() {
-    content.style.width = '370px';
-    content.style.height = '350px';
-    firsth2.style.display='flex'
-  }
 
   
 ///////////second
@@ -60,37 +59,44 @@ function secondpart(){
   svgdollar.style.display ='none'
 }
 setTimeout(secondpart, 4000);
-
 setTimeout(() => {
-secondsvg.style.display ='flex'
-secondp.style.display ='flex'
-}, 4500);
+  secondsvg.style.display ='flex'
+  secondp.style.display ='flex'
 
-setTimeout(() => {
-seccondh.style.display ='flex'
+      secondsvg.style.transition = 'transform 1s ease-in-out';
+      secondp.style.transform = 'translateY(12px)';
+      secondp.style.transition = 'transform 1s ease-in-out'; 
+  }, 4500);
   
-},4700);
+  setTimeout(() => {
+  seccondh.style.display ='flex'
+  seccondh.style.transform = 'translateY(10px)';
+  seccondh.style.transition = 'transform 1s ease-in-out';
+  },4600);
 
 
-//display none second part
+  
+   
+
+// display none second part
 setTimeout(() => {
   secondsvg.style.transform = 'translateY(55px)';
     secondsvg.style.transition = 'transform 1s ease-in-out';
-  },6600);
+  },6500);
  
   setTimeout(() => {
     secondp.style.transform = 'translateY(-55px)';
     secondp.style.transition = 'transform 1s ease-in-out'; 
     seccondh.style.transform = 'translateY(-45px)';
     seccondh.style.transition = 'transform 1s ease-in-out'; 
-  },6500);
+  },6400);
  
   
   setTimeout(() => {
     secondp.style.display ='none'
     secondsvg.style.display ='none'
     seccondh.style.display ='none' 
-  },6870);
+  },7000);
 
   setTimeout(() => {
     thirdp.style.display ='flex'
@@ -99,7 +105,7 @@ setTimeout(() => {
     dollarimg.style.display='flex'
     content.style.display ='flex'
     circularProgress.style.display ='flex'
-    circularProgress.style.top ='120px'
+    circularProgress.style.top ='70px'
     circularProgress.style.transform = 'translateY(5px)';
     circularProgress.style.transition = 'transform 1s ease-in-out'; 
     
@@ -119,23 +125,23 @@ setTimeout(thirdpart, 7500);
 
 
 
-setTimeout(() => {
-  content.style.transition = 'transform 1s ease-in-out'; 
-  content.style.transform = 'translateY(-700px)';
-  dollarimg.style.transition = 'transform 11s ease-in-out'; 
-  dollarimg.style.transform = 'translateY(-700px)'; 
-  seconddiv.style.transform = 'translateY(-500px)';
-  seconddiv.style.transition = 'transform 1s ease-in-out'; 
-  thirdp.style.transform = 'translateY(-700px)';
-  thirdp.style.transition = 'transform 1s ease-in-out'; 
-}, 10730);
+// setTimeout(() => {
+//   content.style.transition = 'transform 1s ease-in-out'; 
+//   content.style.transform = 'translateY(-700px)';
+//   dollarimg.style.transition = 'transform 11s ease-in-out'; 
+//   dollarimg.style.transform = 'translateY(-700px)'; 
+//   seconddiv.style.transform = 'translateY(-500px)';
+//   seconddiv.style.transition = 'transform 1s ease-in-out'; 
+//   thirdp.style.transform = 'translateY(-700px)';
+//   thirdp.style.transition = 'transform 1s ease-in-out'; 
+// }, 10730);
 
 
-setTimeout(() => {
-  content.style.display = 'none'; 
-  thirdp.style.display = 'none';
-  dollarimg.style.display = 'none';
-  seconddiv.style.display = 'none';
-}, 11500);
+// setTimeout(() => {
+//   content.style.display = 'none'; 
+//   thirdp.style.display = 'none';
+//   dollarimg.style.display = 'none';
+//   seconddiv.style.display = 'none';
+// }, 11500);
 
 

@@ -55,6 +55,7 @@ main,.content{
   font-size: 1px;
   font-weight: 600;
   color: #0276B1;
+  opacity: 0.1;
 }
 
 
@@ -62,8 +63,9 @@ svg{
   border: none;
 }
 .title{
+  font-family: optimist, Helvetica Neue, Helvetica, Arial, "sans-serif";
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 400;
   color: #212121;
   letter-spacing: 0.1;
   position: relative;
@@ -72,7 +74,7 @@ svg{
 .titlespan{
   font-family: Arial;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
   color: #212121;
   opacity: 0.9;
   letter-spacing: 0.1;
@@ -81,7 +83,6 @@ svg{
   font-family: optimist, Helvetica Neue, Helvetica, Arial, "sans-serif";
   font-size: 12px;
   font-weight: 500;
-  opacity: 0.9;
 }
 .updiv{
     width: 300px;
@@ -105,30 +106,32 @@ svg{
 
 
 .secondp{
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   width: 261px;
   text-align: center;
   letter-spacing: 0.7px;
-
-
+  display: none;
+  line-height: 18px;
 }
 .seccondh{
   height: 0px;
   padding-top: 24px;
-  font-size: 26px;
+  font-size: 20px;
   text-align: center;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.9px;
   line-height: 38px;
+  display: none;
 }
 .thirdp{
   position: relative;
-  bottom: 153px;
+  bottom: 200px;
   text-align: center;
   letter-spacing: 2;
   font-weight: 500;
   font-size: 14px;
   font-family: optimist, Helvetica Neue, Helvetica, Arial, "sans-serif";
+  line-height: 17px;
   opacity: 0.8;
 }
 .thirdwrapper{
@@ -136,9 +139,7 @@ svg{
 }
 .thirdimg{
   position: relative;
-  top: -90px;
-  /* transform: rotate(10deg); */
-  /* width: 90px; */
+  display: none;
 }
 
 
