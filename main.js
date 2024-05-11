@@ -25,6 +25,7 @@ window.onload = function() {
   dollarimg.style.display ='none'
 }
 setTimeout(() => {
+  document.getElementById('title').classList.add("titplegap")
   title.style.display ='flex'
   updiv.style.display ='flex'
   circularProgress.style.display ='flex'
@@ -61,18 +62,22 @@ function secondpart(){
 }
 setTimeout(secondpart, 4020);
 setTimeout(() => {
-  secondsvg.style.display ='flex'
-  secondp.style.display ='flex'
-      secondsvg.style.transition = 'transform 1s ease-in-out';
-      secondp.style.transform = 'translateY(12px)';
-      secondp.style.transition = 'transform 1s ease-in-out'; 
-  }, 4530);
-  
-  setTimeout(() => {
-  seccondh.style.display ='flex'
-  seccondh.style.transform = 'translateY(10px)';
-  seccondh.style.transition = 'transform 1s ease-in-out';
-  },4550);
+  secondsvg.style.display = 'flex';
+  secondsvg.style.opacity = 1;
+  secondsvg.style.transform = 'translateY(0) scale(1)';
+}, 4530);
+
+setTimeout(() => {
+  seccondh.style.display = 'flex';
+  seccondh.style.opacity = 1;
+  seccondh.style.transform = 'translateY(0) scale(1)';
+}, 4550);
+
+setTimeout(() => {
+  secondp.style.display = 'flex';
+  secondp.style.opacity = 1;
+  secondp.style.transform = 'translateY(0) rotate(0)';
+}, 4550);
 
 
 // display none second part

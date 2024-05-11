@@ -76,6 +76,12 @@ svg{
   top: 20px;
   display: none;
 }
+.titplegap{
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
 .titlespan{
   font-family: Arial;
   font-size: 14px;
@@ -112,23 +118,6 @@ svg{
 }
 
 
-.secondp{
-  font-size: 17px;
-  font-weight: 400;
-  width: 261px;
-  text-align: center;
-  display: none;
-  line-height: 20px;
-  letter-spacing: 0.5px;
-}
-.seccondh{
-  height: 0px;
-  font-size: 23px;
-  text-align: center;
-  letter-spacing: 0.5px;
-  line-height: 38px;
-  display: none;
-}
 .thirdp{
   position: relative;
   bottom: 200px;
@@ -148,7 +137,34 @@ svg{
   position: relative;
   display: none;
 }
-.secondsvg{
+.secondsvg {
   display: none;
+  opacity: 0;
+  transform: translateY(20px) scale(0.5);
+  transition: all 1s ease-in-out;
 }
 
+.secondp {
+  font-size: 17px;
+  font-weight: 400;
+  width: 261px;
+  text-align: center;
+  display: none;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  opacity: 0;
+  transform: translateY(12px) rotate(5deg);
+  transition: all 3s ease-in-out;
+}
+
+.seccondh {
+  height: 0px;
+  font-size: 23px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  line-height: 38px;
+  display: none;
+  opacity: 0;
+  transform: translateY(10px) scale(1.5);
+  transition: all 3s ease-in-out;
+}
