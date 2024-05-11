@@ -18,7 +18,11 @@ secondsvg.style.display ='none'
 
 seccondh.style.display ='none'
 
-
+title.style.display ='none'
+updiv.style.display ='none'
+circularProgress.style.display ='none'
+progressValue.style.display ='none'
+svgdollar.style.display ='none'
 
 
 
@@ -30,6 +34,13 @@ window.onload = function() {
   firsth2.style.display='flex'
   dollarimg.style.display ='none'
 }
+setTimeout(() => {
+  title.style.display ='flex'
+  updiv.style.display ='flex'
+  circularProgress.style.display ='flex'
+  progressValue.style.display ='flex'
+  svgdollar.style.display ='flex'
+}, 100);
 
 let progressStartValue = 0;
 let progressEndValue = 100;
@@ -58,7 +69,7 @@ function secondpart(){
   progressValue.style.display ='none'
   svgdollar.style.display ='none'
 }
-setTimeout(secondpart, 4000);
+setTimeout(secondpart, 4020);
 setTimeout(() => {
   secondsvg.style.display ='flex'
   secondp.style.display ='flex'
