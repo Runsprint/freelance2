@@ -10,7 +10,9 @@ main,.content{
   height:100vh;
   flex-direction: column;
 }
-
+.secondmain{
+  display: none;
+}
 .content{
   width: 100px;
   height: 100px;

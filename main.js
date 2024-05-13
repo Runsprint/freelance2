@@ -11,7 +11,8 @@ const dollarimg  = document.getElementById('dollarimg')
 const seccondh  = document.getElementById('seccondh')
 const secondp  = document.getElementById('secondp')
 const thirdp  = document.getElementById('thirdp')
-
+const firstmain = document.getElementById('first')
+const secondmain = document.getElementById('secondmain')
 window.onload = function() {
   content.style.width = '370px';
   content.style.height = '350px';
@@ -116,8 +117,6 @@ setTimeout(() => {
     startProgress()
 }
 setTimeout(thirdpart, 7500);
-});
-
 
 setTimeout(() => {
   content.style.transition = 'transform 1s ease-in-out'; 
@@ -137,5 +136,15 @@ setTimeout(() => {
   dollarimg.style.display = 'none';
   seconddiv.style.display = 'none';
 }, 11500);
+setTimeout(() => {
+  firstmain.style.display = "none"
+secondmain.style.display = "flex"
+document.body.style.backgroundColor = "#ffffff"
+}, 11600);
+
+});
+
+
+
 
 
