@@ -62,15 +62,15 @@ setTimeout(() => {
 ///aq
 setTimeout(() => {
   seccondh.style.transform = 'translateY(36px)';
-  seccondh.style.transition = 'transform 1s linear';
+  seccondh.style.transition = 'transform 0.4s linear';
 
 }, 4550);
 
 setTimeout(() => {
   secondsvg.style.transform = 'translateY(-35px)';
-  secondsvg.style.transition = 'transform 1s linear';
+  secondsvg.style.transition = 'transform 0.4s linear';
   secondp.style.transform = 'translateY(36px)';
-  secondp.style.transition = 'transform 1s linear';
+  secondp.style.transition = 'transform 0.4s linear';
 }, 4550);
 
 
