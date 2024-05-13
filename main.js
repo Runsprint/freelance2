@@ -12,17 +12,10 @@ const seccondh  = document.getElementById('seccondh')
 const secondp  = document.getElementById('secondp')
 const thirdp  = document.getElementById('thirdp')
 
-svgdollar.style.display ='none'
-
-
-
-
-
 window.onload = function() {
   content.style.width = '370px';
   content.style.height = '350px';
   firsth2.style.display='flex'
-  dollarimg.style.display ='none'
 }
 setTimeout(() => {
   document.getElementById('title').classList.add("titplegap")
@@ -62,21 +55,22 @@ function secondpart(){
 }
 setTimeout(secondpart, 4020);
 setTimeout(() => {
-  secondsvg.style.display = 'flex';
-  secondsvg.style.opacity = 1;
-  secondsvg.style.transform = 'translateY(0) scale(1)';
-}, 4530);
-
-setTimeout(() => {
   seccondh.style.display = 'flex';
-  seccondh.style.opacity = 1;
-  seccondh.style.transform = 'translateY(0) scale(1)';
+  secondsvg.style.display = 'flex'; 
+  secondp.style.display = 'flex';
+}, 4530);
+///aq
+setTimeout(() => {
+  seccondh.style.transform = 'translateY(36px)';
+  seccondh.style.transition = 'transform 1s linear';
+
 }, 4550);
 
 setTimeout(() => {
-  secondp.style.display = 'flex';
-  secondp.style.opacity = 1;
-  secondp.style.transform = 'translateY(0) rotate(0)';
+  secondsvg.style.transform = 'translateY(-35px)';
+  secondsvg.style.transition = 'transform 1s linear';
+  secondp.style.transform = 'translateY(36px)';
+  secondp.style.transition = 'transform 1s linear';
 }, 4550);
 
 
@@ -98,7 +92,7 @@ setTimeout(() => {
     secondp.style.display ='none'
     secondsvg.style.display ='none'
     seccondh.style.display ='none' 
-  },7000);
+  },6900);
 
   setTimeout(() => {
     thirdp.style.display ='flex'
@@ -123,8 +117,6 @@ setTimeout(() => {
 }
 setTimeout(thirdpart, 7500);
 });
-
-
 
 
 setTimeout(() => {
